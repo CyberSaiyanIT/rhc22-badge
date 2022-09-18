@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RomHack Camp 2022 - badge">
+    <title>RomHack Camp 2022 - Badge</title>
+    <link rel="stylesheet" href="/css/pure-min.css" />
+    <link rel="stylesheet" href="/css/grids-responsive.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/toastify.min.css" />
+    <link rel="icon" href="/img/favicon.gif" sizes="32x32" />
+
+</head>
+<body>
+
+<div class="splash-container">
+    <div class="splash">
+      <div class="pure-g">
+        <div class="pure-u-1-3 flex">
+          <div class="l-box">
+	          <img class="pure-img pure-img-responsive" src="img/sx.gif" alt="RomHack Camp Header" />
+          </div>
+        </div>
+        <div class="pure-u-1-3 flex">
+          <div class="l-box">
+            <img class="pure-img pure-img-responsive" id="rh-logo" src="img/logo.gif" alt="RomHack Camp Logo" />
+          </div>
+        </div>
+        <div class="pure-u-1-3 flex">
+          <div class="l-box">
+            <img class="pure-img pure-img-responsive" src="img/dx.gif" alt="RomHack Camp Header" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="content">
+      <div  id="event-info"></div>
+
+	    <div class="tabs">
+		    <div class="tab">
+          <input class="accordion" type="radio" id="rd1" name="rd">
+          <label class="tab-label" for="rd1"><code>$ crontab -l</code></label>
+          <div class="tab-content">
+            <table id="table-schedule" class="pure-table pure-table-horizontal" style="width:100%">
+            </table>
+          </div>
+	      </div>
+        <div class="tab">
+          <input class="accordion" type="radio" id="rd2" name="rd">
+          <label class="tab-label" for="rd2"><code>$ ./rhadar &lt; people</code></label>
+          <div class="tab-content">
+
+
+          <div class="pure-g">
+              <div class="pure-u-lg-1-2 pure-u-md-1">
+                  <div class="l-box"> 
+                    <div class="radar-box">
+
+                      <div class="radar-top"></div>
+                      <div class="radar-top-body"></div>
+                      <div class="radar-content">
+                        <div class="radar-pos"></div>
+                      </div>
+                    </div>    
+                    
+                    <div class="radar-buttons">
+                      <button class="pure-button">-</button>
+                      <button id="radar-number" class="pure-button"><code>-1</code></button>
+                      <button class="pure-button">+</button>
+                    </div>                
+                  </div>
+              </div>
+              <div class="pure-u-lg-1-2 pure-u-md-1">
+                  <div class="l-box" id="table-range-container"> 
+
+                    <table id="table-range" class="pure-table pure-table-horizontal" style="width:100%; letter-spacing:normal;">
+
+                    </table>
+
+                  </div>
+              </div>
+          </div>
+
+            <!-- BEGIN RADAR -->
+            &nbsp;
+
+            <!-- END RADAR -->
+          </div>
+        </div>
+        <div class="tab">
+          <input class="accordion" type="radio" id="rd3" name="rd">
+          <label class="tab-label" for="rd3"><code>$ cat /proc/badge_stats</code></label>
+          <div class="tab-content">
+            <table id="badge-info" class="pure-table pure-table-horizontal" style="width:100%"></table>
+          </div>
+        </div>
+        <div class="tab">
+          <input class="accordion" type="radio" id="rd4" name="rd">
+          <label class="tab-label" for="rd4"><code>$ sudo -i</code></label>
+          <div class="tab-content">
+            <div id="form_not_authenticated">
+              <form class="pure-form" id="login" name="login">
+                <fieldset>
+                    <legend>ADMIN PASSWORD</legend>
+                    <input id="password" name="password" type="password" class="pure-input-1" placeholder="Password" />
+                </fieldset>
+                <button type="submit" class="button-secondary pure-button ">Sign in</button>
+              </form>
+            </div>
+            <div id="form_authenticated">
+              <button type="button" id="btnLogout" class="pure-button button-error">Logout</button>
+            
+              <form class="pure-form" id="badge-name-form" name="badge-name">
+                <fieldset>
+                    <legend>BADGE NAME</legend>
+                    <input id="badge-name" name="badge-name" class="pure-input-1" placeholder="Badge name" />
+                </fieldset>
+                <button type="submit" class="pure-button">Change name</button>
+              </form>
+              <form class="pure-form" id="web-password-form" name="web-password">
+                <fieldset class="pure-group">
+                    <legend>WEB ADMIN PASSWORD</legend>
+                    <input id="web-admin-password1" name="web-admin-password1" class="pure-input-1" placeholder="Password" />
+                    <input id="web-admin-password2" name="web-admin-password2" class="pure-input-1" placeholder="Repeat password" />
+                </fieldset>
+                <button type="submit" class="pure-button">Change</button>
+              </form>
+              <form class="pure-form" id="wifi-ssid-form" name="pure-login">
+                <fieldset>
+                    <legend>WIFI SSID</legend>
+                    <input type="text" id="wifi-ssid" name="wifi-ssid" class="pure-input-1" placeholder="WIFI SSID" />
+                </fieldset>
+                <button type="submit" class="pure-button">Change</button>
+              </form>
+              <form class="pure-form" id="wifi-password-form" name="wifi-password">
+                <fieldset class="pure-group">
+                    <legend>WIFI PASSWORD</legend>
+                    <input id="wifi-password1" name="wifi-password1" class="pure-input-1" placeholder="Password" />
+                    <input id="wifi-password2" name="wifi-password2" class="pure-input-1" placeholder="Repeat password" />
+                </fieldset>
+                <button type="submit" class="pure-button">Change</button>
+              </form>
+              <div>
+              </br>
+              <button type="button" id="btnFactoryReset" class="pure-button button-error">Factory Reset</button>
+              
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+<script type="text/javascript" src="/js/helpers.js"></script>
+<script type="text/javascript" src="/js/client.js"></script>
+<script type="text/javascript" src="/js/paginator.js"></script>
+<script type="text/javascript" src="/js/toastify.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>

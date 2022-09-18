@@ -1,0 +1,57 @@
+image: python:3.9
+
+cache:
+  paths:
+    - ~/.cache/pip
+    - ~/.platformio/.cache
+
+stages:
+ - build
+ - deploy
+
+minify-js-prod:
+  image: node:latest
+  stage: build 
+  script:
+    - sed -i 's:/backend/:/api/v1/:g' ./public/js/client.js
+    - npm install uglify-js node-sass @node-minify/cli@6.2.0 @node-minify/html-minifier@6.2.0 -g
+    - mkdir -p ./output/js
+    - uglifyjs ./public/js/client.js -o output/js/client.js -c -m
+    - uglifyjs ./public/js/helpers.js -o output/js/helpers.js -c -m
+    - uglifyjs ./public/js/index.js -o output/js/index.js -c -m
+    - uglifyjs ./public/js/paginator.js -o output/js/paginator.js -c -m
+    - uglifyjs ./public/js/tetris.js -o output/js/tetris.js -c -m
+    - node-sass ./public/style.scss ./output/style.css --style compressed
+    - cp "./public/js/toastify.js" "output/js"
+    - cp "./public/js/webaudio-tinysynth.js" "output/js"
+    - cp -r "./public/css" "output"
+    - cp -r "./public/img" "output"
+    - cp -r "./public/tetris.mid" "output"
+    - node-minify --compressor html-minifier -i ./public/index.html -o ./output/index.html
+    - node-minify --compressor html-minifier -i ./public/tetris.html -o ./output/tetris.html
+  artifacts:
+    paths:
+      - output
+
+build-firmware:
+  stage: deploy
+  image: python:latest
+  before_script:
+    - "pip install -U platformio"
+  script: 
+    - pip install -U platformio
+    - platformio run -e rhc22-badge
+    - cp -r output/ ./data/www/
+    - platformio run --target buildfs --environment rhc22-badge
+    - mv .pio/build/rhc22-badge/firmware.bin firmware.bin
+    - mv .pio/build/rhc22-badge/spiffs.bin spiffs.bin
+    - mv .pio/build/rhc22-badge/partitions.bin partitions.bin
+    - mv .pio/build/rhc22-badge/bootloader.bin bootloader.bin
+  artifacts:
+    paths:
+      - bootloader.bin
+      - partitions.bin
+      - firmware.bin
+      - spiffs.bin
+  # only:
+  #   - development

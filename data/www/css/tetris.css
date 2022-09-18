@@ -1,0 +1,77 @@
+html, body {
+    overscroll-behavior-y: contain;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    padding: 1.5vh;
+}
+
+.upNextCell {
+    padding: 1vh;
+}
+
+#grid {
+    border: 1px solid black;
+}
+
+#upNext {
+    margin-left: 10px;
+}
+
+#extendedGrid {
+    margin:auto;
+}
+
+#scoreLine {
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+.notVisible {
+    border: none;
+}
+
+#gameSpace {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#outcome {
+    margin: 10px auto;
+    color:white;
+    text-align: center;
+}
+
+.rh-pink {
+    background-color: #c77ac4;
+}
+.rh-green {
+    background-color: #11a44d;
+}
+.rh-orange {
+    background-color: #f57a1d;
+}
+.rh-blue {
+    background-color: #3c5eb3;
+}
+.rh-cyan {
+    background-color: #77d2d9;
+}
+.rh-red {
+    background-color:#f35d64;
+}
+.rh-yellow {
+    background-color:#eaee33;
+}
+
+#gameOver {
+text-align:center;
+color:white;
+}
