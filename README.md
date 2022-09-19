@@ -13,9 +13,9 @@ You can grab the badge by purchasing it at the Cyber Saiyan tent during the Camp
 * We really will appreciate any improvement to the project and pull requests
 * Don't hesitate to come and visit us at the Cyber Saiyan tent if you need help
 
-## Functionalities
+## Features
 
-The badge has some very simple functionalities that will improve your Camp experience:
+The badge has some very simple features that will improve your Camp experience:
 * It is designed to recall the dragon spheres (maybe you will be able to summon Shenron too)
 * The base SOC is a single core ESP32-C3 
    * Integrates a 32-bit core RISC-V microcontroller with a maximum clock speed of 160 MHz
