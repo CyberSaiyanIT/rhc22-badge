@@ -23,7 +23,7 @@ bool check_ble_set()
     for(int i=0; i<MAX_NEARBY_NODE; i++)
     {
         if(ble_nodes[i].active){
-            set_bits |= 1 << (ble_nodes->id-1);
+            set_bits |= 1 << (ble_nodes[i].id-1);
         }
     }
     return set_bits == 0x7F;
