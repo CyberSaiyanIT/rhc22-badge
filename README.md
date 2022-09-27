@@ -71,8 +71,8 @@ Please follow to the official documentation [PlatformIO IDE for VSCode](http://d
 
 * Install docker
 * docker build --pull --rm -f "Dockerfile" -t rhc22badge:latest "."
-* (Bash) docker run -it -v $(pwd)/public:/public -v $(pwd)/data/www:/output rhc22badge
-* (Powershell) docker run -it -v ${PWD}/public:/public -v ${PWD}/data/www:/output rhc22badge
+* (Bash) docker run -it -v <span>$</span>(pwd)/public:/public -v <span>$</span>(pwd)/data/www:/output rhc22badge
+* (Powershell) docker run -it -v <span>$</span>{PWD}/public:/public -v <span>$</span>{PWD}/data/www:/output rhc22badge
    
 ## Build/Upload Filesystem
 
