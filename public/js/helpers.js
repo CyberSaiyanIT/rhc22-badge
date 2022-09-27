@@ -1,3 +1,24 @@
+var escape_map = {
+ '&amp;': '&',
+ '&lt;': '<',
+ '&gt;': '>',
+ '&quot;': '"',
+ '&#x27;': "'",
+ '&#x60;': "`", 
+ '&#8217;': "'", 
+};
+
+function unescaper() {
+  let source = '(?:' + Object.keys(escape_map).join('|') + ')';
+  let testRegexp = RegExp(source);
+  let replaceRegexp = RegExp(source, 'g');
+  return function(string) {
+     string = string == null ? '' : '' + string;
+     return testRegexp.test(string) ? string.replace(replaceRegexp, function(match) { return escape_map[match]; }) : string;
+  };
+}
+var unescape = unescaper()
+
 var labels = {
 	"day": "DAY",
 	"hour": "TIME",
@@ -6,6 +27,7 @@ var labels = {
 	"location": "LOCATION",
 	"duration": "DURATION"
 };
+
 
 function setInput(input, value){
   input.value = value;
@@ -53,7 +75,7 @@ function generate_head(table, data) {
         let text = document.createTextNode(element[key]);
         cell.appendChild(text);
 	cell.setAttribute("data-column", labels[key]);
-        cell.innerHTML = element[key];
+        cell.innerText = unescape(element[key]);
       });
     }
   }
