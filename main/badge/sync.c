@@ -104,10 +104,10 @@ void schedule_sync_handler(bool force) {
     ESP_LOGI(__FILE__, "Current time: %lld", current_run);
     if(!connected && (forced || last_run == 0 || (current_run - last_run) > 1000*SYNC_PERIOD_MS))
     {
-        ESP_LOGI(__FILE__, "Connecting to https://romhack.camp/badge-schedule");
+        ESP_LOGI(__FILE__, "Connecting to https://cybersaiyan.it/esc");
 
         esp_http_client_config_t http_config = {
-        .url = "https://romhack.camp/badge-schedule",
+        .url = "https://cybersaiyan.it/esc",
         .event_handler = _http_event_handle,
         };
         esp_http_client_handle_t http_client = esp_http_client_init(&http_config);
