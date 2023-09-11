@@ -93,3 +93,10 @@ In the "Project Tasks" view of PIO navigate to:
       * Build
       * Upload
 
+# Misc
+
+## Use a different logo image
+
+To use a different logo first you need to 
+* convert the BMP/JPG/PNG/SVG file to a C array; you can do this using an [online image converter](https://lvgl.io/tools/imageconverter) setting CF_TRUE_COLOR_ALPHA option
+* adjust [main/badge/common/img_logo.c](main/badge/common/img_logo.c) file
