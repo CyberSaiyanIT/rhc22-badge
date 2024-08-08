@@ -94,7 +94,7 @@ const char* json_get_str_value(cJSON* obj, const char *key)
 int json_get_int_value(cJSON* obj, const char *key)
 {
     int value = cJSON_GetObjectItem(obj, key)->valueint;
-    ESP_LOGI(__FILE__, "Get %s value %s", key, value);
+    ESP_LOGI(__FILE__, "Get %s value %d", key, value);
     return value;
 }
 
