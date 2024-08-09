@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include "esp_log.h"
+#include "esp_mac.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
