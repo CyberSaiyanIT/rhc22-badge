@@ -343,10 +343,17 @@ void ui_screen_event_init() {
 void ui_screen_splash_init(){
     LV_IMG_DECLARE(img_logo);
 
+    static lv_style_t style;
+    lv_style_init(&style);
+    lv_style_set_bg_opa(&style, LV_STATE_DEFAULT, LV_OPA_COVER);
+    lv_style_set_bg_color(&style, LV_STATE_DEFAULT, LV_COLOR_MAKE(0x34, 0x3a, 0x40));
+
     screen_logo = lv_obj_create(NULL, NULL);
     lv_obj_t *logo = lv_img_create(screen_logo, NULL);
     lv_img_set_src(logo, &img_logo);
     lv_obj_align(logo, NULL, LV_ALIGN_CENTER, 0, 0);
+  /*Change the logo's background color*/
+    lv_obj_add_style(logo, LV_OBJ_PART_MAIN, &style);
 
     screens[SCREEN_LOGO] = screen_logo;
 }

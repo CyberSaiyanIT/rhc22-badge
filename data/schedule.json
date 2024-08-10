@@ -1,194 +1,239 @@
 {
-    "info": "CjxwPldlbGNvbWUgdG8gRVNDIDIwMjM8L3A+CgoKCjxwPjwvcD4K",
+    "info": "CjxwPk1PQ0EgMjAyNCDigJxCYWNrIHRvIHRoZSByMDB04oCdPC9wPgoKCgo8cD48L3A+",
     "schedule": [
         {
             "sort": "12100",
-            "title": " Italian Linux Society 2023: dove siamo e dove andiamo ",
+            "title": " Opening Keynote ",
             "day": "1",
-            "hour": "2100",
-            "speaker": " Roberto 'MadBob' Guido (ILS)",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "hour": "1200",
+            "speaker": "METRO OLOGRAFIX",
+            "location": "TRK1",
+            "duration": "01h00m"
         },
         {
             "sort": "12130",
-            "title": " FSFE per l'Italia ",
+            "title": " LUNCH BREAK ",
             "day": "1",
-            "hour": "21:30",
-            "speaker": " Marta Andreoli (FSFE) ",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "hour": "13:00",
+            "speaker": "",
+            "location": "",
+            "duration": "01h15m"
         },
         {
             "sort": "12200",
-            "title": " Il Software Libero visto da un grafico 3D Artist ",
+            "title": "Curious Minds, Converging Interests ",
             "day": "1",
-            "hour": "22:00",
-            "speaker": " Michele Canova ",
-            "location": "Sala talk",
+            "hour": "14:15",
+            "speaker": "HACKTIVE SECURITY - Christopher BIANCHI 'calfcrusher', Riccardo DEGLI ESPOSITI 'partywave' ",
+            "location": "TRK1",
             "duration": "00h30m"
         },
         {
             "sort": "12230",
-            "title": " Il mondo Open Source attorno al progetto Stable Diffusion ",
+            "title": "Open Source Digital Forensic ",
             "day": "1",
-            "hour": "22:30",
-            "speaker": " Paolo Dalprato ",
-            "location": "Sala talk",
+            "hour": "14:15",
+            "speaker": "Alessandro FARINA ",
+            "location": "TRK2",
             "duration": "00h30m"
         },
         {
             "sort": "12300",
-            "title": " Tecnologie sostenibili e Africa: il software Open Hospital",
+            "title": "Proof of Inference: Verifying the Integrity of Machine Learning Model Predictions",
             "day": "1",
-            "hour": "23:00",
-            "speaker": "Alessandro Domanico (Informatici Senza Frontiere)",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "hour": "14:45",
+            "speaker": "Michele DALLACHIESA",
+            "location": "TRK1",
+            "duration": "00h45m"
         },
         {
             "sort": "22200",
-            "title": " Dalla robotica educativa alla robotica agonistica: le sfide meccatroniche ",
-            "day": "2",
-            "hour": "22:00",
-            "speaker": "Fabrizio Vendramin, Denis Kosumovic, Davide Rorato",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "Food Supply Chain Security: Protecting Against Digital Threats ",
+            "day": "1",
+            "hour": "14:45",
+            "speaker": "Mohammadreza (Mo) ASHOURI",
+            "location": "TRK2",
+            "duration": "00h45m"
         },
         {
             "sort": "22230",
-            "title": "Meta-Rubik / come ti invento un modo per risolvere il Cubo",
-            "day": "2",
-            "hour": "22:30",
-            "speaker": " Cesare Nesi ",
-            "location": "Sala talk",
+            "title": " Sponsor Talk - TBA",
+            "day": "1",
+            "hour": "15:30",
+            "speaker": "COLLABORA ",
+            "location": "TRK1",
             "duration": "00h30m"
         },
         {
             "sort": "22300",
-            "title": "La Sicurezza OT demistificata: un'analisi sul vero significato di OT Security",
-            "day": "2",
-            "hour": "23:00",
-            "speaker": "Davide Pala",
-            "location": "Sala talk",
+            "title": "Trusted boot and Kairos: Honey, I've secure yout boot!",
+            "day": "1",
+            "hour": "15:30",
+            "speaker": "Ettore DI GIACINTO",
+            "location": "TRK2",
             "duration": "00h30m"
         },
         {
             "sort": "22330",
-            "title": "Midnight talk: 200 licenze in 25 minuti",
-            "day": "2",
-            "hour": "23:30",
-            "speaker": "Valerio Bozzolan",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "IHE - SOLDERING LAB con MASTRO GIPPO",
+            "day": "1",
+            "hour": "15:30",
+            "speaker": "IHE - MASTRO GIPPO",
+            "location": "HACKER SPACE",
+            "duration": "02h30m"
         },
         {
             "sort": "31100",
-            "title": "Magical: un’ausilio tecnologico all’apprendimento della matematica",
-            "day": "3",
-            "hour": "11:00",
-            "speaker": "beina & g5pw (Mittelab)",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "Kubernetes security fundamentals: scraping your cluster security",
+            "day": "1",
+            "hour": "16:00",
+            "speaker": "NETSONS - Aurelio FORESE",
+            "location": "TRK1",
+            "duration": "00h45m"
         },
         {
             "sort": "31130",
-            "title": " OpenSTAManager (Gestionale libero)",
-            "day": "3",
-            "hour": "11:30",
-            "speaker": "Fabio 'Loviuz' Lovato (ILS Sezione Locale Este)",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "Evolving Fault Injection: progressi e stato dell'arte.",
+            "day": "1",
+            "hour": "16:00",
+            "speaker": "Cristofaro MUNE",
+            "location": "TRK2",
+            "duration": "00h45m"
         },
         {
             "sort": "31200",
-            "title": "La rete delle olimpiadi della Radio WRTC 2023",
-            "day": "3",
-            "hour": "12:00",
-            "speaker": "Fabio IW3FVZ",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "SECURITY CERT - Blue Team Threat Emulation Game",
+            "day": "1",
+            "hour": "16:30",
+            "speaker": "",
+            "location": "HACKER SPACE",
+            "duration": "01h0m"
         },
         {
             "sort": "31230",
-            "title": "il Web 2.5",
-            "day": "3",
-            "hour": "12:30",
-            "speaker": "Qyd0ro",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": " Sponsor Talk - TBA",
+            "day": "1",
+            "hour": "17:15",
+            "speaker": "BEAR IT",
+            "location": "TRK1",
+            "duration": "00h45m"
         },
         {
             "sort": "31500",
-            "title": "Sovranità digitale ed economia circolare a scuola ed a casa grazie a FUSS e SchoolSwap",
-            "day": "3",
-            "hour": "15:00",
-            "speaker": "Paolo Dongilli e Diego Maniacco (LUGBZ)",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "La censura di Internet in Italia e nel mondo",
+            "day": "1",
+            "hour": "17:015",
+            "speaker": "Marco D'ITRI",
+            "location": "TRK2",
+            "duration": "00h45m"
         },
         {
             "sort": "31530",
-            "title": "Minetest: mondi liberi a cubetti",
-            "day": "3",
-            "hour": "15:30",
-            "speaker": "Marco Amato",
-            "location": "Sala talk",
+            "title": "External Attack Surface Management e Cyber Threat Intelligence: Proteggere il Perimetro Digitale",
+            "day": "1",
+            "hour": "18:00",
+            "speaker": "DIGIMETRICA - Marcello DAL DEGAN, Raffaello PARISI ",
+            "location": "TRK1",
             "duration": "00h30m"
         },
         {
             "sort": "31600",
-            "title": "Self-Hosting 101",
-            "day": "3",
-            "hour": "16:00",
-            "speaker": "Shi4",
-            "location": "Sala talk",
+            "title": "Fuzzing del firewall di Linux con syzkaller",
+            "day": "1",
+            "hour": "18:00",
+            "speaker": "Davide ORNAGHI",
+            "location": "TRK2",
             "duration": "00h30m"
         },
         {
             "sort": "31630",
-            "title": "HomeLab per AI generativa offline",
-            "day": "3",
-            "hour": "16:30",
-            "speaker": "Davide Caminati",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "Fondazione della Metro Olografix, hacking, stasi criogenica: aneddoti, considerazioni, sogni",
+            "day": "1",
+            "hour": "18:00",
+            "speaker": "Tony MOBILY 'Merc'",
+            "location": "HACKER SPACE",
+            "duration": "02h00m"
         },
         {
             "sort": "31900",
-            "title": "KeycardAccess: il controllo accessi di Mittelab con tessere DESFire",
-            "day": "3",
-            "hour": "19:00",
-            "speaker": "5p4k & g5pw (Mittelab)",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "Phantom Threats: Navigating Cyber False Flags in the Attribution Game",
+            "day": "1",
+            "hour": "18:30",
+            "speaker": "Agostino 'van1sh' PANICO",
+            "location": "TRK1",
+            "duration": "00h45m"
         },
         {
             "sort": "31930",
-            "title": "Alla scoperta di DirectX: gestione user-land dello stack grafico di Windows",
-            "day": "3",
-            "hour": "19:30",
-            "speaker": "Christian Rendina",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "Teoria dell'informazione per nerd svogliati",
+            "day": "1",
+            "hour": "18:30",
+            "speaker": "Normando 'manolab' MARCOLONGO",
+            "location": "TRK2",
+            "duration": "00h45m"
         },
         {
             "sort": "32000",
-            "title": "Unsafe Reflection Horror Stories",
-            "day": "3",
-            "hour": "20:00",
-            "speaker": "zonia3000 (Mittelab)",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "Industroyer2: un'analisi tecnica",
+            "day": "1",
+            "hour": "19:15",
+            "speaker": "Angelo PENDUZZU (APT85)",
+            "location": "TRK1",
+            "duration": "00h45m"
         },
         {
             "sort": "32030",
-            "title": "The BitLocker kill button",
-            "day": "3",
-            "hour": "20:30",
-            "speaker": "Alessandro 'jekil' Tanasi",
-            "location": "Sala talk",
-            "duration": "00h30m"
+            "title": "30 Seconds to Mars ma anche su Hotbird",
+            "day": "1",
+            "hour": "19:15",
+            "speaker": "Valerio 'ftp' MANCINI",
+            "location": "TRK2",
+            "duration": "00h45m"
+        },
+        {
+            "sort": "32100",
+            "title": " DINNER",
+            "day": "1",
+            "hour": "20:00",
+            "speaker": "",
+            "location": "",
+            "duration": "01h00m"
+        },
+        {
+            "sort": "32130",
+            "title": "The curse of False Flag",
+            "day": "1",
+            "hour": "21:00",
+            "speaker": "Marco DI COSTANZO, Vito ALFANO",
+            "location": "TRK1",
+            "duration": "00h45m"
+        },
+        {
+            "sort": "32200",
+            "title": "PiracyShield e censura di stato",
+            "day": "1",
+            "hour": "21:00",
+            "speaker": "Michele PIETRAVALLE",
+            "location": "TRK2",
+            "duration": "00h45m"
+        },
+        {
+            "sort": "32230",
+            "title": "Giochi di ruolo: CBR+PNK",
+            "day": "1",
+            "hour": "21:00",
+            "speaker": "METRO OLOGRAFIX",
+            "location": "HACKER SPACE",
+            "duration": "01h30m"
+        },
+        {
+            "sort": "32300",
+            "title": "Presentazione libro 'Non ERA un libro per hacker'",
+            "day": "1",
+            "hour": "21:45",
+            "speaker": "Stefano FRATEPIETRO",
+            "location": "TRK2",
+            "duration": "00h45m"
         }
     ]
 }

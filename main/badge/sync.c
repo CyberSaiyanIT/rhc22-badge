@@ -91,9 +91,6 @@ esp_err_t _http_event_handle(esp_http_client_event_t *evt)
                 
             last_run = current_run; // update timer
             break;
-        case HTTP_EVENT_REDIRECT:
-            ESP_LOGI(__FILE__, "HTTP_EVENT_REDIRECT");
-            break;
     }
     return ESP_OK;
 }
@@ -105,10 +102,10 @@ void schedule_sync_handler(bool force) {
     ESP_LOGI(__FILE__, "Current time: %lld", current_run);
     if(!connected && (forced || last_run == 0 || (current_run - last_run) > 1000*SYNC_PERIOD_MS))
     {
-        ESP_LOGI(__FILE__, "Connecting to https://cybersaiyan.it/esc");
+        ESP_LOGI(__FILE__, "Connecting to https://cybersaiyan.it/moca");
 
         esp_http_client_config_t http_config = {
-        .url = "https://cybersaiyan.it/esc",
+        .url = "https://cybersaiyan.it/moca",
         .event_handler = _http_event_handle,
         };
         esp_http_client_handle_t http_client = esp_http_client_init(&http_config);
