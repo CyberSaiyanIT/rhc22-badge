@@ -461,7 +461,7 @@ void ui_ap_start_handler() {
 
     lv_label_set_text(admin_switch_text, "TURN OFF AP");
 
-    char buf[BADGE_BUF_SIZE] = {0};
+    char buf[BADGE_BUF_SIZE + 19] = {0};
     snprintf(buf, sizeof(buf), "SSID: %s", badge_obj.ap_ssid);
     lv_label_set_text(admin_ssid, buf);
     snprintf(buf, sizeof(buf), "PASS: %s", badge_obj.ap_password);
@@ -508,7 +508,7 @@ void ui_sta_stop_handler() {
 
 void ui_connection_progress(uint8_t cur, uint8_t max){
     if(cur != max){
-        char buf[BADGE_BUF_SIZE] = {0};
+        char buf[BADGE_BUF_SIZE + 20] = {0}; // Increase the size of buf to accommodate the entire formatted string
         snprintf(buf, sizeof(buf), "Connecting (%d/%d)", cur, max);
         lv_label_set_text(admin_switch_sta_text, buf);
         lv_obj_set_hidden(admin_switch_sta_text, false);

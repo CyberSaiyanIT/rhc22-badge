@@ -71,7 +71,7 @@ enum enum_badge_event {
     EVENT_SYNC_STOP
 };
 
-extern xQueueHandle wifi_queue;
+extern QueueHandle_t wifi_queue;
 extern ble_node_t ble_nodes[MAX_NEARBY_NODE];
 extern badge_obj_t badge_obj;
 

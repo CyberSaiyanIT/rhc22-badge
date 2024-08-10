@@ -12,7 +12,7 @@ static void i2c_register_write(uint8_t addr, uint8_t reg_addr, uint8_t data)
 {
     uint8_t write_buf[2] = {reg_addr, data};
     i2c_master_write_to_device(0, addr, write_buf, sizeof(write_buf), 
-                               I2C_MASTER_TIMEOUT_MS / portTICK_RATE_MS);
+                                   I2C_MASTER_TIMEOUT_MS / portTICK_PERIOD_MS);
 }
 
 static void i2c_master_init()
@@ -158,9 +158,9 @@ void flash(int period, uint8_t fade_factor) {
     rgb_t color = rgb_from_code(MAGENTA_SAIYAN);
     color = rgb_fade(color, fade_factor);
     set_leds_by_badge_id(color);
-    vTaskDelay(300 / portTICK_RATE_MS);
+    vTaskDelay(300 / portTICK_PERIOD_MS);
     all_off();
-    vTaskDelay(period / portTICK_RATE_MS);
+    vTaskDelay(period / portTICK_PERIOD_MS);
 }
 
 void set_completed(){
@@ -168,21 +168,21 @@ void set_completed(){
     color = rgb_fade(color, 0xf0);
     for(int i=1; i<7;i++){
         led_rgb_color(led_order[i], color);
-        vTaskDelay(200 / portTICK_RATE_MS);
+        vTaskDelay(200 / portTICK_PERIOD_MS);
         all_off();
     }
     all_on(color);
-    vTaskDelay(1000 / portTICK_RATE_MS);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
     for(int i=0; i<7;i++){
         led_rgb_off(led_order[i]);
-        vTaskDelay(200 / portTICK_RATE_MS);
+        vTaskDelay(200 / portTICK_PERIOD_MS);
     }
 }
 
 void led_task(void* arg) 
 {
     while(1){
-        ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+        ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
         bool nearby_set = check_ble_set();
         if(nearby_set)
         {

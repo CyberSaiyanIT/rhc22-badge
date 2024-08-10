@@ -34,7 +34,7 @@ static int check_duplicate(const ble_node_t* item) {
 }
 
 static int set_node_data(const char* local_name, const short rssi, ble_node_t* item) {
-    if (sscanf(local_name, "[%u] %28s", &(item->id), item->name) == 2)
+    if (sscanf(local_name, "[%hhu] %28s", &(item->id), item->name) == 2)
     {
         if (item->id > 0 && item->id < 8){
             item->rssi = rssi;
@@ -321,7 +321,7 @@ void bt_init()
             }
             ESP_LOGI(__FILE__, "BLE Advertise, cmd_sent: %d", cmd_cnt);
         }
-        vTaskDelay(1000 / portTICK_RATE_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 
     init_ble_nodes();
