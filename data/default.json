@@ -10,7 +10,7 @@
         "password": ""
     },
     "sta": {
-        "ssid": "RHC22-badge",
-        "password": "c90e1cc63f0bcce"
+        "ssid": "yourwifi",
+        "password": "password"
     }
 }
