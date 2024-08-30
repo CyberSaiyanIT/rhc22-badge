@@ -1,0 +1,22 @@
+
+https://jsoneditoronline.org/#right=local.zasonu&left=url.https%3A%2F%2Fhackertracker.app%2Fht%2Fconferences%2FMOCA2024%2Fevents.json
+
+function query (data) {
+  return {
+    "info": "CjxwPk1PQ0EgMjAyNCDigJxCYWNrIHRvIHRoZSByMDB04oCdPC9wPgoKCgo8cD48L3A+",
+    "schedule": _.chain(data)
+        //.filter(item => item?.begin_timestamp?.seconds <= 1726264800) // 13/09
+        //.filter(item => item?.begin_timestamp?.seconds >= 1726264800 && item?.begin_timestamp?.seconds <= 1726351200) //14/09
+        //.filter(item => item?.begin_timestamp?.seconds >= 1726351200) //15/09
+        .orderBy(['begin_timestamp.seconds', 'location.name'], ['asc', 'desc'])
+        .map(item => ({
+        "sort": item.id.toString(),
+        "title": item?.title,
+        "day": new Date(item?.begin_tsz).getUTCDate().toString(),
+        "hour": new Date(item?.begin_tsz).toLocaleTimeString("it-IT").substring(0, 5),
+        "speaker": item?.speakers.map(s => (s?.name)).join(", ").trim(),
+        "location": item?.location?.name,
+        "duration": new Date(new Date(item?.end_tsz) - new Date(item?.begin_tsz)).toISOString().slice(11, -8).replace(":", "h") + "m"
+        })).value()
+    }
+}

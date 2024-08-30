@@ -1,239 +1,734 @@
 {
-    "info": "CjxwPk1PQ0EgMjAyNCDigJxCYWNrIHRvIHRoZSByMDB04oCdPC9wPgoKCgo8cD48L3A+",
-    "schedule": [
-        {
-            "sort": "12100",
-            "title": " Opening Keynote ",
-            "day": "1",
-            "hour": "1200",
-            "speaker": "METRO OLOGRAFIX",
-            "location": "TRK1",
-            "duration": "01h00m"
-        },
-        {
-            "sort": "12130",
-            "title": " LUNCH BREAK ",
-            "day": "1",
-            "hour": "13:00",
-            "speaker": "",
-            "location": "",
-            "duration": "01h15m"
-        },
-        {
-            "sort": "12200",
-            "title": "Curious Minds, Converging Interests ",
-            "day": "1",
-            "hour": "14:15",
-            "speaker": "HACKTIVE SECURITY - Christopher BIANCHI 'calfcrusher', Riccardo DEGLI ESPOSITI 'partywave' ",
-            "location": "TRK1",
-            "duration": "00h30m"
-        },
-        {
-            "sort": "12230",
-            "title": "Open Source Digital Forensic ",
-            "day": "1",
-            "hour": "14:15",
-            "speaker": "Alessandro FARINA ",
-            "location": "TRK2",
-            "duration": "00h30m"
-        },
-        {
-            "sort": "12300",
-            "title": "Proof of Inference: Verifying the Integrity of Machine Learning Model Predictions",
-            "day": "1",
-            "hour": "14:45",
-            "speaker": "Michele DALLACHIESA",
-            "location": "TRK1",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "22200",
-            "title": "Food Supply Chain Security: Protecting Against Digital Threats ",
-            "day": "1",
-            "hour": "14:45",
-            "speaker": "Mohammadreza (Mo) ASHOURI",
-            "location": "TRK2",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "22230",
-            "title": " Sponsor Talk - TBA",
-            "day": "1",
-            "hour": "15:30",
-            "speaker": "COLLABORA ",
-            "location": "TRK1",
-            "duration": "00h30m"
-        },
-        {
-            "sort": "22300",
-            "title": "Trusted boot and Kairos: Honey, I've secure yout boot!",
-            "day": "1",
-            "hour": "15:30",
-            "speaker": "Ettore DI GIACINTO",
-            "location": "TRK2",
-            "duration": "00h30m"
-        },
-        {
-            "sort": "22330",
-            "title": "IHE - SOLDERING LAB con MASTRO GIPPO",
-            "day": "1",
-            "hour": "15:30",
-            "speaker": "IHE - MASTRO GIPPO",
-            "location": "HACKER SPACE",
-            "duration": "02h30m"
-        },
-        {
-            "sort": "31100",
-            "title": "Kubernetes security fundamentals: scraping your cluster security",
-            "day": "1",
-            "hour": "16:00",
-            "speaker": "NETSONS - Aurelio FORESE",
-            "location": "TRK1",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "31130",
-            "title": "Evolving Fault Injection: progressi e stato dell'arte.",
-            "day": "1",
-            "hour": "16:00",
-            "speaker": "Cristofaro MUNE",
-            "location": "TRK2",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "31200",
-            "title": "SECURITY CERT - Blue Team Threat Emulation Game",
-            "day": "1",
-            "hour": "16:30",
-            "speaker": "",
-            "location": "HACKER SPACE",
-            "duration": "01h0m"
-        },
-        {
-            "sort": "31230",
-            "title": " Sponsor Talk - TBA",
-            "day": "1",
-            "hour": "17:15",
-            "speaker": "BEAR IT",
-            "location": "TRK1",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "31500",
-            "title": "La censura di Internet in Italia e nel mondo",
-            "day": "1",
-            "hour": "17:015",
-            "speaker": "Marco D'ITRI",
-            "location": "TRK2",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "31530",
-            "title": "External Attack Surface Management e Cyber Threat Intelligence: Proteggere il Perimetro Digitale",
-            "day": "1",
-            "hour": "18:00",
-            "speaker": "DIGIMETRICA - Marcello DAL DEGAN, Raffaello PARISI ",
-            "location": "TRK1",
-            "duration": "00h30m"
-        },
-        {
-            "sort": "31600",
-            "title": "Fuzzing del firewall di Linux con syzkaller",
-            "day": "1",
-            "hour": "18:00",
-            "speaker": "Davide ORNAGHI",
-            "location": "TRK2",
-            "duration": "00h30m"
-        },
-        {
-            "sort": "31630",
-            "title": "Fondazione della Metro Olografix, hacking, stasi criogenica: aneddoti, considerazioni, sogni",
-            "day": "1",
-            "hour": "18:00",
-            "speaker": "Tony MOBILY 'Merc'",
-            "location": "HACKER SPACE",
-            "duration": "02h00m"
-        },
-        {
-            "sort": "31900",
-            "title": "Phantom Threats: Navigating Cyber False Flags in the Attribution Game",
-            "day": "1",
-            "hour": "18:30",
-            "speaker": "Agostino 'van1sh' PANICO",
-            "location": "TRK1",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "31930",
-            "title": "Teoria dell'informazione per nerd svogliati",
-            "day": "1",
-            "hour": "18:30",
-            "speaker": "Normando 'manolab' MARCOLONGO",
-            "location": "TRK2",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "32000",
-            "title": "Industroyer2: un'analisi tecnica",
-            "day": "1",
-            "hour": "19:15",
-            "speaker": "Angelo PENDUZZU (APT85)",
-            "location": "TRK1",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "32030",
-            "title": "30 Seconds to Mars ma anche su Hotbird",
-            "day": "1",
-            "hour": "19:15",
-            "speaker": "Valerio 'ftp' MANCINI",
-            "location": "TRK2",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "32100",
-            "title": " DINNER",
-            "day": "1",
-            "hour": "20:00",
-            "speaker": "",
-            "location": "",
-            "duration": "01h00m"
-        },
-        {
-            "sort": "32130",
-            "title": "The curse of False Flag",
-            "day": "1",
-            "hour": "21:00",
-            "speaker": "Marco DI COSTANZO, Vito ALFANO",
-            "location": "TRK1",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "32200",
-            "title": "PiracyShield e censura di stato",
-            "day": "1",
-            "hour": "21:00",
-            "speaker": "Michele PIETRAVALLE",
-            "location": "TRK2",
-            "duration": "00h45m"
-        },
-        {
-            "sort": "32230",
-            "title": "Giochi di ruolo: CBR+PNK",
-            "day": "1",
-            "hour": "21:00",
-            "speaker": "METRO OLOGRAFIX",
-            "location": "HACKER SPACE",
-            "duration": "01h30m"
-        },
-        {
-            "sort": "32300",
-            "title": "Presentazione libro 'Non ERA un libro per hacker'",
-            "day": "1",
-            "hour": "21:45",
-            "speaker": "Stefano FRATEPIETRO",
-            "location": "TRK2",
-            "duration": "00h45m"
-        }
-    ]
+  "info": "CjxwPk1PQ0EgMjAyNCDigJxCYWNrIHRvIHRoZSByMDB04oCdPC9wPgoKCgo8cD48L3A+",
+  "schedule": [
+    {
+      "sort"    : "57045"          ,
+      "title"   : "Opening Keynote",
+      "day"     : "13"             ,
+      "hour"    : "12:00"          ,
+      "speaker" : "Metro Olografix",
+      "location": "XOR"            ,
+      "duration": "01h00m"
+    },
+    {
+      "sort": "57107",
+      "title": "Curious Minds, Converging Interests",
+      "day": "13",
+      "hour": "14:15",
+      "speaker": "Riccardo Degli Espositi 'partywave', Christopher Bianchi 'calfcrusher'",
+      "location": "XOR",
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57085"                       ,
+      "title"   : "Open Source Digital Forensic",
+      "day"     : "13"                          ,
+      "hour"    : "14:15"                       ,
+      "speaker" : "Alessandro Farina"           ,
+      "location": "MOV"                         ,
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57076",
+      "title": "Proof of Inference: Verifying the Integrity of Machine Learning Model Predictions",
+      "day": "13",
+      "hour": "14:45",
+      "speaker": "Michele Dallachiesa",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57075",
+      "title": "Food Supply Chain Security: Protecting Against Digital Threats",
+      "day": "13",
+      "hour": "14:45",
+      "speaker": "Mohammadreza Ashouri",
+      "location": "MOV",
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57170",
+      "title": "Oltre ATT&CK: una metodologia per valutare e migliorare Detection & Response",
+      "day": "13",
+      "hour": "15:30",
+      "speaker": "Marco Gandolfi",
+      "location": "XOR",
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57084"                                                 ,
+      "title"   : "Trusted boot and Kairos: Honey, I've secure yout boot!",
+      "day"     : "13"                                                    ,
+      "hour"    : "15:30"                                                 ,
+      "speaker" : "Ettore Di Giacinto (mudler)"                           ,
+      "location": "MOV"                                                   ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57056"              ,
+      "title"   : "Badge Soldering Lab",
+      "day"     : "13"                 ,
+      "hour"    : "15:30"              ,
+      "speaker" : "Mastro Gippo"       ,
+      "location": "FreeKevin"          ,
+      "duration": "02h30m"
+    },
+    {
+      "sort": "57059",
+      "title": "Kubernetes security fundamentals: scraping your cluster security",
+      "day": "13",
+      "hour": "16:00",
+      "speaker": "Aurelio Forese",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57114"                                                 ,
+      "title"   : "Evolving Fault Injection: progressi e stato dell'arte.",
+      "day"     : "13"                                                    ,
+      "hour"    : "16:00"                                                 ,
+      "speaker" : "Cristofaro Mune"                                       ,
+      "location": "MOV"                                                   ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57039"                          ,
+      "title"   : "Blue Team Threat Emulation Game",
+      "day"     : "13"                             ,
+      "hour"    : "16:30"                          ,
+      "speaker" : "SecurityCert"                   ,
+      "location": "FreeKevin"                      ,
+      "duration": "01h00m"
+    },
+    {
+      "sort": "57069",
+      "title": "Coinvolgere le nuove generazioni, una storia di software, skateboard e gelato al lampone.",
+      "day": "13",
+      "hour": "16:45",
+      "speaker": "Alessandro Grassi",
+      "location": "MOV",
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57097"                   ,
+      "title"   : "XSS + SIDES"             ,
+      "day"     : "13"                      ,
+      "hour"    : "17:15"                   ,
+      "speaker" : "Stefano Biotto (sgrum0x)",
+      "location": "XOR"                     ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57038"                                       ,
+      "title"   : "La censura di Internet in Italia e nel mondo",
+      "day"     : "13"                                          ,
+      "hour"    : "17:15"                                       ,
+      "speaker" : "Marco d'Itri"                                ,
+      "location": "MOV"                                         ,
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57037",
+      "title": "External Attack Surface Management e Cyber Threat Intelligence: Proteggere il Perimetro Digitale",
+      "day": "13",
+      "hour": "18:00",
+      "speaker": "Marcello Dal Degan, Raffaello Parisi",
+      "location": "XOR",
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57104"                                      ,
+      "title"   : "Fuzzing del firewall di Linux con syzkaller",
+      "day"     : "13"                                         ,
+      "hour"    : "18:00"                                      ,
+      "speaker" : "Davide Ornaghi"                             ,
+      "location": "MOV"                                        ,
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57092",
+      "title": "Fondazione della Metro Olografix, hacking, stasi criogenica: aneddoti, considerazioni, sogni",
+      "day": "13",
+      "hour": "18:00",
+      "speaker": "Tony Mobily 'merc'",
+      "location": "FreeKevin",
+      "duration": "02h00m"
+    },
+    {
+      "sort": "57105",
+      "title": "Phantom Threats: Navigating Cyber False Flags in the Attribution Game",
+      "day": "13",
+      "hour": "18:30",
+      "speaker": "Agostino Panico",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57088"                                      ,
+      "title"   : "Teoria dell'informazione per nerd svogliati",
+      "day"     : "13"                                         ,
+      "hour"    : "18:30"                                      ,
+      "speaker" : "Normando Marcolongo"                        ,
+      "location": "MOV"                                        ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57078"                           ,
+      "title"   : "Industroyer2: un'analisi tecnica",
+      "day"     : "13"                              ,
+      "hour"    : "19:15"                           ,
+      "speaker" : "Angelo Penduzzu"                 ,
+      "location": "XOR"                             ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57094"                                 ,
+      "title"   : "30 seconds to Mars ma anche su Hotbird",
+      "day"     : "13"                                    ,
+      "hour"    : "19:15"                                 ,
+      "speaker" : "Valerio 'ftp21' Mancini"               ,
+      "location": "MOV"                                   ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57051"                         ,
+      "title"   : "The curse of False Flag"       ,
+      "day"     : "13"                            ,
+      "hour"    : "21:00"                         ,
+      "speaker" : "Marco Di Costanzo, Vito Alfano",
+      "location": "XOR"                           ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57044"                          ,
+      "title"   : "PiracyShield e censura di stato",
+      "day"     : "13"                             ,
+      "hour"    : "21:00"                          ,
+      "speaker" : "Michele Pietravalle aka PHCV"   ,
+      "location": "MOV"                            ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57053"          ,
+      "title"   : "CBR+PNK"        ,
+      "day"     : "13"             ,
+      "hour"    : "21:00"          ,
+      "speaker" : "Metro Olografix",
+      "location": "FreeKevin"      ,
+      "duration": "01h30m"
+    },
+    {
+      "sort"    : "57113"                                              ,
+      "title"   : "Presentazione libro \"Non ERA un libro per hacker\"",
+      "day"     : "13"                                                 ,
+      "hour"    : "21:45"                                              ,
+      "speaker" : "Stefano SteveDEFT Fratepietro"                      ,
+      "location": "MOV"                                                ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57087"                        ,
+      "title"   : "The sound of malware"         ,
+      "day"     : "14"                           ,
+      "hour"    : "09:00"                        ,
+      "speaker" : "Gregorio Palamà, Luca Di Vita",
+      "location": "XOR"                          ,
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57074",
+      "title": "Cloud Semplice e Scalabile con .NET Orleans: il motore dietro XBox, Skype e GearOfWar",
+      "day": "14",
+      "hour": "09:00",
+      "speaker": "Piergiorgio Vagnozzi",
+      "location": "MOV",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57055"                                                   ,
+      "title"   : "Il ruolo di hacktivisti e cyber army volontari in guerra",
+      "day"     : "14"                                                      ,
+      "hour"    : "09:45"                                                   ,
+      "speaker" : "Carola Frediani"                                         ,
+      "location": "XOR"                                                     ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57067"                                           ,
+      "title"   : "Debian, /var/ vuota, /etc/ vuota e factory reset",
+      "day"     : "14"                                              ,
+      "hour"    : "09:45"                                           ,
+      "speaker" : "Marco d'Itri"                                    ,
+      "location": "MOV"                                             ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57091"                    ,
+      "title"   : "Moca for First Responders",
+      "day"     : "14"                       ,
+      "hour"    : "10:00"                    ,
+      "speaker" : "HackInBo® Forensic Game"  ,
+      "location": "FreeKevin"                ,
+      "duration": "03h00m"
+    },
+    {
+      "sort": "57093",
+      "title": "Offensive Operations as Code: Personal Journey in Innovating and Automating Cloud Infrastructure",
+      "day": "14",
+      "hour": "10:15",
+      "speaker": "Vito De Laurentis",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57086",
+      "title": "Token theft attacks a smart way to reuse cookies from aunt MFA",
+      "day": "14",
+      "hour": "10:15",
+      "speaker": "Matteo Creati",
+      "location": "MOV",
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57082",
+      "title": "Enhancing privacy and security in storage systems with zero-knowledge cryptography",
+      "day": "14",
+      "hour": "11:00",
+      "speaker": "Mohammadreza Ashouri",
+      "location": "XOR",
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57052",
+      "title": "Hacking the Law: Quando i giudici AI incontrano gli avvocati \"intelligenti\"",
+      "day": "14",
+      "hour": "11:00",
+      "speaker": "Michele Ubertone, Lorenzo 'lopoc' Cococcia",
+      "location": "MOV",
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57089",
+      "title": "EUDI - La nuova identità digitale in Europa: un disastro annunciato?",
+      "day": "14",
+      "hour": "11:30",
+      "speaker": "Jaromil",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57081",
+      "title": "From Zero to Hero: come fare un videogioco senza avere idea di come si faccia",
+      "day": "14",
+      "hour": "11:30",
+      "speaker": "Andrea Pompili",
+      "location": "MOV",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57096"                                       ,
+      "title"   : "Threat Modeling for Decentralized Identities",
+      "day"     : "14"                                          ,
+      "hour"    : "12:15"                                       ,
+      "speaker" : "Simone Onofri"                               ,
+      "location": "XOR"                                         ,
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57048",
+      "title": "The Annoying Sentinel: Un sistema di monitoraggio domestico con intelligenza artificiale che vi farà venire gli incubi",
+      "day": "14",
+      "hour": "12:15",
+      "speaker": "Alberto Pelliccione",
+      "location": "MOV",
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57060",
+      "title": "Beyond the Basics: Deep Dive into Securing OAuth2 Implementations",
+      "day": "14",
+      "hour": "14:15",
+      "speaker": "Mattia Zago, Giovanni Bartolomucci, Giuseppe Porcu, Stefano Maistri",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57083"                      ,
+      "title"   : "Pandemia da coronausb"      ,
+      "day"     : "14"                         ,
+      "hour"    : "14:15"                      ,
+      "speaker" : "Andrea \"Mangusta\" Azzalin",
+      "location": "MOV"                        ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57111"                           ,
+      "title"   : "Forensica digitale contemporanea",
+      "day"     : "14"                              ,
+      "hour"    : "15:00"                           ,
+      "speaker" : "Mirko di Salvatore, Nicolò Monti",
+      "location": "XOR"                             ,
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57112",
+      "title": "Casa tua, domotica con le tue regole: Privacy, Scelta & Sostenibilità con Home Assistant",
+      "day": "14",
+      "hour": "15:00",
+      "speaker": "Alfredo \"Rainbowbreeze\" Morresi",
+      "location": "MOV",
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57043"                          ,
+      "title"   : "M71A - gioco dell'oca hackerato",
+      "day"     : "14"                             ,
+      "hour"    : "15:00"                          ,
+      "speaker" : "M71A"                           ,
+      "location": "FreeKevin"                      ,
+      "duration": "01h00m"
+    },
+    {
+      "sort"    : "57071"                        ,
+      "title"   : "The good, the bad, the native",
+      "day"     : "14"                           ,
+      "hour"    : "15:30"                        ,
+      "speaker" : "Gregorio Palamà"              ,
+      "location": "XOR"                          ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57077"                                  ,
+      "title"   : "Come gestire nodi TOR dalla tua cantina",
+      "day"     : "14"                                     ,
+      "hour"    : "15:30"                                  ,
+      "speaker" : "Osservatorio Nessuno"                   ,
+      "location": "MOV"                                    ,
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57068",
+      "title": "Datemi 21 minuti e cambierò la vostra visione del tracing su Linux",
+      "day": "14",
+      "hour": "16:15",
+      "speaker": "Davide Berardi",
+      "location": "XOR",
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57100",
+      "title": "Research is Lagging Behind: Reverse Engineering DRAM Circuits with SEM and FIB",
+      "day": "14",
+      "hour": "16:15",
+      "speaker": "Michele Marazzi",
+      "location": "MOV",
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57101",
+      "title": "Casa tua, domotica con le tue regole: Privacy, Scelta & Sostenibilità con Home Assistant (Workshop)",
+      "day": "14",
+      "hour": "16:15",
+      "speaker": "Alfredo \"Rainbowbreeze\" Morresi",
+      "location": "FreeKevin",
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57072",
+      "title": "Hackerare un Large Language Model: un tentativo di Explainable AI (XAI)",
+      "day": "14",
+      "hour": "16:45",
+      "speaker": "Enrico Zimuel, Leonida Gianfagna",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57108"                                                ,
+      "title"   : "Bitcoin e l'insicurezza segreta degli Hardware Wallet",
+      "day"     : "14"                                                   ,
+      "hour"    : "16:45"                                                ,
+      "speaker" : "CR1PT0 - Davide Baraldi"                              ,
+      "location": "MOV"                                                  ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57090"                  ,
+      "title"   : "OWASP Juice Shop on AWS",
+      "day"     : "14"                     ,
+      "hour"    : "17:15"                  ,
+      "speaker" : "Giorgio Bonfiglio"      ,
+      "location": "FreeKevin"              ,
+      "duration": "02h00m"
+    },
+    {
+      "sort"    : "57103"                  ,
+      "title"   : "Inclusione e tecnologia",
+      "day"     : "14"                     ,
+      "hour"    : "17:30"                  ,
+      "speaker" : "M71A"                   ,
+      "location": "XOR"                    ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57049"             ,
+      "title"   : "CAN-Bus Zero Trust",
+      "day"     : "14"                ,
+      "hour"    : "17:30"             ,
+      "speaker" : "Massimo D’Alessio" ,
+      "location": "MOV"               ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57063"                                       ,
+      "title"   : "Il diritto nella società della manipolazione",
+      "day"     : "14"                                          ,
+      "hour"    : "18:00"                                       ,
+      "speaker" : "Michele Ubertone, Marta Taroni"              ,
+      "location": "XOR"                                         ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57070"                                   ,
+      "title"   : "Segui il Bianconiglio... se ci riesci...",
+      "day"     : "14"                                      ,
+      "hour"    : "18:00"                                   ,
+      "speaker" : "Andrea Pompili"                          ,
+      "location": "MOV"                                     ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57047"                           ,
+      "title"   : "Blue Team Threat Emulation Game ",
+      "day"     : "14"                              ,
+      "hour"    : "18:15"                           ,
+      "speaker" : "SecurityCert"                    ,
+      "location": "FreeKevin"                       ,
+      "duration": "01h00m"
+    },
+    {
+      "sort"    : "57116"                                                  ,
+      "title"   : "Sonic Visions: transforming landscapes into soundscapes",
+      "day"     : "14"                                                     ,
+      "hour"    : "18:45"                                                  ,
+      "speaker" : "Marco Melletti, Matteo Martelli"                        ,
+      "location": "XOR"                                                    ,
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57073",
+      "title": "Astronomia e Cyber Security: L'Impatto Emotivo su Analisti e Ricercatori",
+      "day": "14",
+      "hour": "18:45",
+      "speaker": "Andrei Moldovan",
+      "location": "MOV",
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57065",
+      "title": "Hacking e diritti digitali: come rivoluzionare il discorso pubblico e avere impatto reale",
+      "day": "14",
+      "hour": "19:15",
+      "speaker": "vecna",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57040"                         ,
+      "title"   : "My journey into cloud security",
+      "day"     : "14"                            ,
+      "hour"    : "19:15"                         ,
+      "speaker" : "Giovanni merlos Mellini"       ,
+      "location": "MOV"                           ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57169"                     ,
+      "title"   : "CodeQL as your hunting bro",
+      "day"     : "14"                        ,
+      "hour"    : "19:30"                     ,
+      "speaker" : "Alessandro Tanasi"         ,
+      "location": "FreeKevin"                 ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57061"          ,
+      "title"   : "Premiazione CTF",
+      "day"     : "14"             ,
+      "hour"    : "21:00"          ,
+      "speaker" : "Metro Olografix",
+      "location": "XOR"            ,
+      "duration": "00h15m"
+    },
+    {
+      "sort": "57057",
+      "title": "Full Homomorphic Encryption the holy grail of cloud encryption",
+      "day": "14",
+      "hour": "21:00",
+      "speaker": "Piero Giacomelli",
+      "location": "MOV",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57042"           ,
+      "title"   : "Dungeons&Dragons",
+      "day"     : "14"              ,
+      "hour"    : "21:00"           ,
+      "speaker" : "Metro Olografix" ,
+      "location": "FreeKevin"       ,
+      "duration": "01h30m"
+    },
+    {
+      "sort"    : "57041"                ,
+      "title"   : "SATCOM/MILSAT Hacking",
+      "day"     : "14"                   ,
+      "hour"    : "21:15"                ,
+      "speaker" : "John Doe"             ,
+      "location": "XOR"                  ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57102"                                              ,
+      "title"   : "Cenere, macerie e ipocrisia dell'attivismo digitale",
+      "day"     : "14"                                                 ,
+      "hour"    : "21:45"                                              ,
+      "speaker" : "Andrea Monti"                                       ,
+      "location": "MOV"                                                ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57080"                                   ,
+      "title"   : "Non te lo dico. Crittografia per ragazzi",
+      "day"     : "15"                                      ,
+      "hour"    : "09:30"                                   ,
+      "speaker" : "Giacomo 'Jackaless' Alessandroni"        ,
+      "location": "FreeKevin"                               ,
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57115",
+      "title": "LocalAI: The Open Source alternative to OpenAI, Anthropic, ...",
+      "day": "15",
+      "hour": "09:45",
+      "speaker": "Ettore Di Giacinto (mudler)",
+      "location": "XOR",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57098"                                     ,
+      "title"   : "Design Shutters: reusable security objects",
+      "day"     : "15"                                        ,
+      "hour"    : "09:45"                                     ,
+      "speaker" : "Paolo Ottolino"                            ,
+      "location": "MOV"                                       ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57099"                        ,
+      "title"   : "Boot process for modern Linux",
+      "day"     : "15"                           ,
+      "hour"    : "10:30"                        ,
+      "speaker" : "Danilo Spinella"              ,
+      "location": "XOR"                          ,
+      "duration": "00h30m"
+    },
+    {
+      "sort": "57064",
+      "title": "gULP: A Versatile Log Processing Tool for digital forensics, incident response and threat hunting",
+      "day": "15",
+      "hour": "10:30",
+      "speaker": "Valerio Lupi, Gabriele Zuddas",
+      "location": "MOV",
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57110"                                                 ,
+      "title"   : "Sviluppo Rapido di applicazioni con Laravel e Filament",
+      "day"     : "15"                                                    ,
+      "hour"    : "11:00"                                                 ,
+      "speaker" : "Mircha Emanuel `ryuujin` D'Angelo"                     ,
+      "location": "XOR"                                                   ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57095"                                                    ,
+      "title"   : "L'approccio Hacker al ruolo della cyber security nell'ESG",
+      "day"     : "15"                                                       ,
+      "hour"    : "11:00"                                                    ,
+      "speaker" : "Alessio L.R. Pennasilico aka -=mayhem=-"                  ,
+      "location": "MOV"                                                      ,
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57106"             ,
+      "title"   : "M71A - quizzettone",
+      "day"     : "15"                ,
+      "hour"    : "11:00"             ,
+      "speaker" : "M71A"              ,
+      "location": "FreeKevin"         ,
+      "duration": "01h00m"
+    },
+    {
+      "sort"    : "57054"                                                  ,
+      "title"   : "\"Il buono, il brutto, il cattivo\" della cybersecurity",
+      "day"     : "15"                                                     ,
+      "hour"    : "11:45"                                                  ,
+      "speaker" : "Lorenzo Dina"                                           ,
+      "location": "XOR"                                                    ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57046"                  ,
+      "title"   : "Reti ieri oggi e domani",
+      "day"     : "15"                     ,
+      "hour"    : "11:45"                  ,
+      "speaker" : "Donato De Meo"          ,
+      "location": "MOV"                    ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57066"                     ,
+      "title"   : "How to Teach Complex Ideas",
+      "day"     : "15"                        ,
+      "hour"    : "12:15"                     ,
+      "speaker" : "Leonardo Tamiano"          ,
+      "location": "XOR"                       ,
+      "duration": "00h45m"
+    },
+    {
+      "sort": "57109",
+      "title": "Come Rust mi ha aiutato a sviluppare un keystore programmabile, veloce e sicuro",
+      "day": "15",
+      "hour": "12:15",
+      "speaker": "Marco Pagliaricci",
+      "location": "MOV",
+      "duration": "00h45m"
+    },
+    {
+      "sort"    : "57050"                                   ,
+      "title"   : "Zap Attack – web app open source scanner",
+      "day"     : "15"                                      ,
+      "hour"    : "13:00"                                   ,
+      "speaker" : "fabio carletti aka Ryuw"                 ,
+      "location": "XOR"                                     ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57079"                                       ,
+      "title"   : "Digital Forensics ed investigazioni digitali",
+      "day"     : "15"                                          ,
+      "hour"    : "13:00"                                       ,
+      "speaker" : "Luca Mercatanti"                             ,
+      "location": "MOV"                                         ,
+      "duration": "00h30m"
+    },
+    {
+      "sort"    : "57058"           ,
+      "title"   : "Closing ceremony",
+      "day"     : "15"              ,
+      "hour"    : "15:00"           ,
+      "speaker" : "Metro Olografix" ,
+      "location": "XOR"             ,
+      "duration": "01h00m"
+    }
+  ]
 }
