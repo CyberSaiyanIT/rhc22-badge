@@ -1,3 +1,3 @@
-const char* GIT_REV="N/A";
-const char* GIT_TAG="N/A";
-const char* GIT_BRANCH="N/A";
+const char* GIT_REV="c8476fe+";
+const char* GIT_TAG="";
+const char* GIT_BRANCH="master";

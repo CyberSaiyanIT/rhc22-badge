@@ -1,4 +1,5 @@
 #include "httpd.h"
+#include "esp_chip_info.h"
 
 #define REST_TAG  __FILE__
 
@@ -37,7 +38,7 @@ static esp_err_t set_content_type_from_file(httpd_req_t *req, const char *filepa
 static esp_err_t get_handler(httpd_req_t *req)
 {
     char filepath[FILE_PATH_MAX];
-    printf("free_heap_size = %d\n", esp_get_free_heap_size());
+    printf("free_heap_size = %lu\n", esp_get_free_heap_size());
     rest_context = (rest_server_context_t *)req->user_ctx;
     strlcpy(filepath, rest_context->base_path, sizeof(filepath));
     if (req->uri[strlen(req->uri) - 1] == '/') {
@@ -54,7 +55,7 @@ static esp_err_t get_handler(httpd_req_t *req)
     }
 
     set_content_type_from_file(req, filepath);
-    printf("free_heap_size = %d\n", esp_get_free_heap_size());
+    printf("free_heap_size = %lu\n", esp_get_free_heap_size());
 
     char *chunk = rest_context->scratch;
     ssize_t read_bytes;
@@ -72,7 +73,7 @@ static esp_err_t get_handler(httpd_req_t *req)
                 httpd_resp_sendstr_chunk(req, NULL);
                 /* Respond with 500 Internal Server Error */
                 httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "Failed to send file");
-                printf("free_heap_size = %d\n", esp_get_free_heap_size());
+                printf("free_heap_size = %lu\n", esp_get_free_heap_size());
                 return ESP_FAIL;
             }
         }
@@ -135,14 +136,14 @@ static bool check_session(httpd_req_t *req, const char* client_data) {
 }
 
 static esp_err_t rest_send_response(httpd_req_t *req, char* response){
-    ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+    ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
     if (httpd_resp_sendstr(req, response) != ESP_OK) {
         ESP_LOGE(__FILE__, "Response failed!");
         httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "Failed to send response");
-        ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+        ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
         return ESP_FAIL;
     }
-    ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+    ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
     return ESP_OK;
 }
 
@@ -539,13 +540,13 @@ void connect_handler(void* arg, esp_event_base_t event_base,
     client_count++;
     ESP_LOGI(__FILE__, "Number of clients: %d", client_count);
 
-    ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+    ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
     httpd_handle_t* server = (httpd_handle_t*) arg;
     if (*server == NULL) {
         ESP_LOGI(__FILE__, "Starting webserver");
         *server = start_webserver();
     }
-    ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+    ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 }
 
 void disconnect_handler(void* arg, esp_event_base_t event_base,
@@ -554,7 +555,7 @@ void disconnect_handler(void* arg, esp_event_base_t event_base,
     client_count--;
     ESP_LOGI(__FILE__, "Number of clients: %d", client_count);
 
-    ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+    ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
     httpd_handle_t* server = (httpd_handle_t*) arg;
     if (*server && !client_count) {
         ESP_LOGI(__FILE__, "Stopping webserver");
@@ -564,7 +565,7 @@ void disconnect_handler(void* arg, esp_event_base_t event_base,
             ESP_LOGE(__FILE__, "Failed to stop http server");
         }
     }
-    ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+    ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 }
 
 

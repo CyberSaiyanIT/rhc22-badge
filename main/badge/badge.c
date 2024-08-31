@@ -63,7 +63,7 @@ char* load_schedule_from_file() {
     int file_size = ftell(fp);  // get current file pointer
     fseek(fp, 0, SEEK_SET); // seek back to beginning of file
 
-    char* data_buf = calloc(1, file_size + 1);
+    char* data_buf = (char*)calloc(1, file_size + 1);
     if(!data_buf){
         fclose(fp);
         ESP_LOGE(__FILE__, "Cannot allocate memory of %d bytes", file_size);

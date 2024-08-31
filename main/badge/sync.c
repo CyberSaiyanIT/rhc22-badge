@@ -75,8 +75,7 @@ esp_err_t _http_event_handle(esp_http_client_event_t *evt)
             }
 
             ui_event_load(); // Preload in UI
-            ESP_LOGI(__FILE__, "File saved", output_len);
-
+            ESP_LOGI(__FILE__, "File saved %d bytes", output_len);
             break;
         case HTTP_EVENT_DISCONNECTED:
             ESP_LOGI(__FILE__, "HTTP_EVENT_DISCONNECTED");
@@ -91,7 +90,6 @@ esp_err_t _http_event_handle(esp_http_client_event_t *evt)
             }
                 
             last_run = current_run; // update timer
-
             break;
     }
     return ESP_OK;
@@ -104,10 +102,10 @@ void schedule_sync_handler(bool force) {
     ESP_LOGI(__FILE__, "Current time: %lld", current_run);
     if(!connected && (forced || last_run == 0 || (current_run - last_run) > 1000*SYNC_PERIOD_MS))
     {
-        ESP_LOGI(__FILE__, "Connecting to https://romhack.camp/badge-schedule");
+        ESP_LOGI(__FILE__, "Connecting to https://cybersaiyan.it/moca");
 
         esp_http_client_config_t http_config = {
-        .url = "https://romhack.camp/badge-schedule",
+        .url = "https://cybersaiyan.it/moca",
         .event_handler = _http_event_handle,
         };
         esp_http_client_handle_t http_client = esp_http_client_init(&http_config);
@@ -115,7 +113,7 @@ void schedule_sync_handler(bool force) {
         esp_err_t err = esp_http_client_perform(http_client);
 
         if (err == ESP_OK) {
-        ESP_LOGI(__FILE__, "Status = %d, content_length = %d",
+        ESP_LOGI(__FILE__, "Status = %d, content_length = %" PRId64,
                 esp_http_client_get_status_code(http_client),
                 esp_http_client_get_content_length(http_client));
         }

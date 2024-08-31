@@ -2,7 +2,7 @@
 
 static const char *TAG = "WIFI";
 static wifi_mode_t curr_mode = WIFI_MODE_NULL;
-xQueueHandle wifi_queue;
+QueueHandle_t wifi_queue;
 
 static EventGroupHandle_t wifi_event_group;
 const int CONNECTED_BIT = BIT0;
@@ -89,7 +89,7 @@ void wifi_init(void)
 
 bool start_wifi_ap(void)
 {
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 	
 	const char* AP_WIFI_SSID = badge_obj.ap_ssid;
 	const char* AP_WIFI_PASSWORD = badge_obj.ap_password;
@@ -122,14 +122,14 @@ bool start_wifi_ap(void)
 			 AP_WIFI_SSID, AP_WIFI_PASSWORD);
 
     curr_mode = WIFI_MODE_AP;
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 
 	return ESP_OK;
 }
 
 bool start_wifi_sta()
 {
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 	
 	const char* STA_WIFI_SSID = badge_obj.sta_ssid;
 	const char* STA_WIFI_PASSWORD = badge_obj.sta_password;
@@ -157,14 +157,14 @@ bool start_wifi_sta()
 	}
 
     curr_mode = WIFI_MODE_STA;
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 
 	return (bits & CONNECTED_BIT) != 0;
 }
 
 bool start_wifi_apsta()
 {
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 	
 	const char* AP_WIFI_SSID = badge_obj.ap_ssid;
 	const char* AP_WIFI_PASSWORD = badge_obj.ap_password;
@@ -210,19 +210,19 @@ bool start_wifi_apsta()
 	}
 
     curr_mode = WIFI_MODE_APSTA;
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 
 	return (bits & CONNECTED_BIT) != 0;
 }
 
 void stop_wifi(){
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 
     esp_wifi_disconnect();
     esp_wifi_stop();
     esp_wifi_set_mode(WIFI_MODE_NULL);
     ESP_LOGI(TAG, "WIFI disabled");
-	ESP_LOGI(__FILE__, "free_heap_size = %d\n", esp_get_free_heap_size());
+	ESP_LOGI(__FILE__, "free_heap_size = %lu\n", esp_get_free_heap_size());
 }
 
 void wifi_task(void *arg)
@@ -254,7 +254,7 @@ void wifi_task(void *arg)
 				esp_timer_stop(inactivity_timer);
                 break;            
             default:
-                ESP_LOGI(__FILE__, "not exists event %04x", wifi_event);
+                ESP_LOGI(__FILE__, "not exists event 0x%04" PRIx32, wifi_event);
                 break;
         }
         vTaskDelay( 1000 / portTICK_PERIOD_MS );

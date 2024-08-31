@@ -159,11 +159,11 @@ void ui_event_load()
 
     int size = cJSON_GetArraySize(schedule_array);
     lv_table_set_row_cnt(table_event, size);
-    lv_table_set_col_cnt(table_event, 2);
+    //lv_table_set_col_cnt(table_event, 2);
 
+    char buff[256];
     for (int i = 0; i < size; i++)
     {
-        char buf[256];
         cJSON* item = cJSON_GetArrayItem(schedule_array, i);
 
         //cJSON *index = cJSON_GetObjectItem(item, "index");
@@ -174,16 +174,16 @@ void ui_event_load()
         cJSON *location = cJSON_GetObjectItem(item, "location");
         cJSON *duration = cJSON_GetObjectItem(item, "duration");
 
-        //ESP_LOGI(__FILE__, "Index %d: %s", idx, speaker->valuestring);
+        //ESP_LOGI(__FILE__, "Index %d: %s", i, speaker->valuestring);
 
-        snprintf(buf, sizeof(buf), "DAY %s (%s)\n@ %s\n~%s",
+        snprintf(buff, sizeof(buff), "DAY %s (%s)\n@ %s\n~%s",
                  day->valuestring, hour->valuestring, 
                  location->valuestring, duration->valuestring);
-        lv_table_set_cell_value(table_event, i, 0, buf);
+        lv_table_set_cell_value(table_event, i, 0, buff);
 
-        snprintf(buf, sizeof(buf), "%s\nby %s",
+        snprintf(buff, sizeof(buff), "%s\nby %s",
             title->valuestring, speaker->valuestring);
-        lv_table_set_cell_value(table_event, i, 1, buf);
+        lv_table_set_cell_value(table_event, i, 1, buff);
     }
 
     cJSON_Delete(schedule_json);
@@ -347,6 +347,12 @@ void ui_screen_splash_init(){
     lv_obj_t *logo = lv_img_create(screen_logo, NULL);
     lv_img_set_src(logo, &img_logo);
     lv_obj_align(logo, NULL, LV_ALIGN_CENTER, 0, 0);
+  /*Change the logo's background color*/
+    static lv_style_t style;
+    lv_style_init(&style);
+    lv_style_set_bg_opa(&style, LV_STATE_DEFAULT, LV_OPA_COVER);
+    lv_style_set_bg_color(&style, LV_STATE_DEFAULT, LV_COLOR_MAKE(0x34, 0x3a, 0x40));
+    lv_obj_add_style(logo, LV_OBJ_PART_MAIN, &style);
 
     screens[SCREEN_LOGO] = screen_logo;
 }
@@ -461,7 +467,7 @@ void ui_ap_start_handler() {
 
     lv_label_set_text(admin_switch_text, "TURN OFF AP");
 
-    char buf[BADGE_BUF_SIZE] = {0};
+    char buf[BADGE_BUF_SIZE + 19] = {0};
     snprintf(buf, sizeof(buf), "SSID: %s", badge_obj.ap_ssid);
     lv_label_set_text(admin_ssid, buf);
     snprintf(buf, sizeof(buf), "PASS: %s", badge_obj.ap_password);
@@ -508,7 +514,7 @@ void ui_sta_stop_handler() {
 
 void ui_connection_progress(uint8_t cur, uint8_t max){
     if(cur != max){
-        char buf[BADGE_BUF_SIZE] = {0};
+        char buf[BADGE_BUF_SIZE + 20] = {0}; // Increase the size of buf to accommodate the entire formatted string
         snprintf(buf, sizeof(buf), "Connecting (%d/%d)", cur, max);
         lv_label_set_text(admin_switch_sta_text, buf);
         lv_obj_set_hidden(admin_switch_sta_text, false);
@@ -568,8 +574,8 @@ void ui_task(void *arg)
     lv_init();
     lvgl_driver_init();
 
-    lv_color_t *buf1 = heap_caps_malloc(DISP_BUF_SIZE * sizeof(lv_color_t), MALLOC_CAP_DMA);
-    lv_color_t *buf2 = heap_caps_malloc(DISP_BUF_SIZE * sizeof(lv_color_t), MALLOC_CAP_DMA);
+    lv_color_t *buf1 = (lv_color_t*) heap_caps_malloc(DISP_BUF_SIZE * sizeof(lv_color_t), MALLOC_CAP_DMA);
+    lv_color_t *buf2 = (lv_color_t*) heap_caps_malloc(DISP_BUF_SIZE * sizeof(lv_color_t), MALLOC_CAP_DMA);
 
     static lv_disp_buf_t disp_buf;
     uint32_t size_in_px = DISP_BUF_SIZE;
@@ -647,6 +653,10 @@ void button_task(void *arg)
         if (xQueueReceive(button_events, &curr_ev, 1000 / portTICK_PERIOD_MS))
         {
             uint8_t btn_id = curr_ev.pin - 0x08;
+            if (curr_ev.event == BUTTON_HELD)
+            {
+                set_screen_led_backlight(SCREEN_BRIGHT_MID);
+            }
             if (curr_ev.pin == BUTTON_1) // DOWN button event
             {
                 if ((prev_ev[btn_id].event == BUTTON_HELD) && (curr_ev.event == BUTTON_UP))
