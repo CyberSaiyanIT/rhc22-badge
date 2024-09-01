@@ -63,7 +63,8 @@ char* load_schedule_from_file() {
     int file_size = ftell(fp);  // get current file pointer
     fseek(fp, 0, SEEK_SET); // seek back to beginning of file
 
-    char* data_buf = (char*)calloc(1, file_size + 1);
+    ESP_LOGI(__FILE__, "schedule: max contiguous free_heap_size = %lu\n", heap_caps_get_largest_free_block(MALLOC_CAP_INTERNAL));
+    char* data_buf = (char*)malloc(file_size + 1);
     if(!data_buf){
         fclose(fp);
         ESP_LOGE(__FILE__, "Cannot allocate memory of %d bytes", file_size);
