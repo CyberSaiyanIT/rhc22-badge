@@ -152,6 +152,11 @@ void ui_button_down()
 void ui_event_load()
 {
     const char* buf = load_schedule_from_file();
+    if (buf == NULL)
+    {
+        ESP_LOGI(__FILE__, "Failed to load schedule from file");
+        return;
+    }
     cJSON* schedule_json = cJSON_Parse(buf);
     free((char*)buf);
 

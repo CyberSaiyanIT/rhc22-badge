@@ -73,9 +73,9 @@ esp_err_t _http_event_handle(esp_http_client_event_t *evt)
                 ESP_LOGE(__FILE__, "Rename failed");
                 return ESP_FAIL;
             }
+            ESP_LOGI(__FILE__, "File saved %d bytes", output_len);
 
             ui_event_load(); // Preload in UI
-            ESP_LOGI(__FILE__, "File saved %d bytes", output_len);
             break;
         case HTTP_EVENT_DISCONNECTED:
             ESP_LOGI(__FILE__, "HTTP_EVENT_DISCONNECTED");
