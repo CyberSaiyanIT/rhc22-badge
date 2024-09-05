@@ -93,6 +93,9 @@ In the "Project Tasks" view of PIO navigate to:
       * Build
       * Upload
 
+# Known Issues
+* after dowloading the MOCA schedule from web you should restart the badge to see the updated schedule. This is due to a memory allocartion problem (the json file is too big) and the fix is a WIP
+
 # Misc
 
 ## Use a different logo image
