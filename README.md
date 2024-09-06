@@ -5,13 +5,13 @@
 
 Cyber Saiyan community has designed and developed a special gadget to celebrate RomHack Camp 2022.
 
-You can grab the badge by purchasing it at the Cyber Saiyan tent during the Camp and the Conference
-* The badge's package will include a lanyard, two batteries and...the badge
+You can play with the badge during MOCA 2024 at Cyber Saiyan Village where we will have 20 badges available. If you have your own badge from RomHack Camp 2022 please bring it with you.
+Some useful information
 * In order to start playing around with and hacking it, is recommended to bring a micro USB data cable with you
 * It is also recommended to bring replacement 1.5V AA batteries and/or a powerbank
-* The badge is already flashed with the Cyber Saiyan firmware
+* The badge is already flashed with the MOCA specific firmware
 * We really will appreciate any improvement to the project and pull requests
-* Don't hesitate to come and visit us at the Cyber Saiyan tent if you need help
+* Don't hesitate to come and visit us at the Cyber Saiyan Village if you need help
 
 ## Features
 
@@ -97,6 +97,10 @@ In the "Project Tasks" view of PIO navigate to:
 * after dowloading the MOCA schedule from web you should restart the badge to see the updated schedule. This is due to a memory allocartion problem (the json file is too big) and the fix is a WIP
 
 # Misc
+
+## WiFi SSID name lenght limit
+
+The WiFi SSID name configure to connect to external AP is limited to 20 chars
 
 ## Use a different logo image
 
