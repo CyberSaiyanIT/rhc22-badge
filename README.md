@@ -63,6 +63,9 @@ Please follow to the official documentation [PlatformIO IDE for VSCode](http://d
 
 * Git clone this repository and open it on VSCode
 
+If you get the error message "No module named pkg_resources", you need to open the 'PlatformIO Core CLI' and execute command:
+   * <span>pip install setuptools</span>
+
 ## Build www data (Linux)
 
 * ./www-build.sh
