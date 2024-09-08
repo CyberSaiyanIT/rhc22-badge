@@ -2,6 +2,7 @@
 DIR="./public"
 WWW_DIR="./data/www"
 WORK_DIR=`mktemp -d`
+PATH=./node_modules/.bin:$PATH
 
 if [[ ! "$WORK_DIR" || ! -d "$WORK_DIR" ]]; then
   echo "Could not create temp dir"
@@ -36,4 +37,4 @@ else
 		sed -i'' 's:/backend/:/api/v1/:g' "$WORK_DIR/js/client.js"
 fi
 
-cp -r "$WORK_DIR/" "$DIR/../data/www/"
+cp -r $WORK_DIR/* "$DIR/../data/www/"

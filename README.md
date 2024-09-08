@@ -68,6 +68,11 @@ If you get the error message "No module named pkg_resources", you need to open t
 
 ## Build www data (Linux)
 
+* Prerequisites:
+   * Install Node.js and NPM
+* Use NPM to Install required Packages:
+   * npm install node-minify node-sass
+
 * ./www-build.sh
 
 ## Build www data (Docker)
