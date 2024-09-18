@@ -620,15 +620,68 @@ void ui_task(void *arg)
     vTaskDelete(NULL);
 }
 
+lv_obj_t* ui_palla_otto_random_screen() {
+    screen_logo = lv_obj_create(NULL, NULL);
+    lv_obj_t *logo = lv_img_create(screen_logo, NULL);
+
+    int r = rand() % 10;
+
+    switch (r) {
+    case 1:
+        printf("");
+        LV_IMG_DECLARE(palla_otto_2);
+        lv_img_set_src(logo, &palla_otto_2);
+        break;
+    case 2:
+        printf("");
+        LV_IMG_DECLARE(palla_otto_2);
+        lv_img_set_src(logo, &palla_otto_2);
+        break;
+    case 3:
+        printf("");
+        LV_IMG_DECLARE(palla_otto_3);
+        lv_img_set_src(logo, &palla_otto_3);
+        break;
+    case 4:
+        printf("");
+        LV_IMG_DECLARE(palla_otto_2);
+        lv_img_set_src(logo, &palla_otto_2);
+        break;
+    case 7:
+        printf("");
+        LV_IMG_DECLARE(palla_otto_7);
+        lv_img_set_src(logo, &palla_otto_7);
+        break;
+    case 8:
+        printf("");
+        LV_IMG_DECLARE(palla_otto_8);
+        lv_img_set_src(logo, &palla_otto_8);
+        break;
+    default:
+        printf("");
+        LV_IMG_DECLARE(palla_otto_0);
+        lv_img_set_src(logo, &palla_otto_0);
+        break;
+    }
+
+    lv_obj_align(logo, NULL, LV_ALIGN_CENTER, 0, 0);
+
+    static lv_style_t style;
+    lv_style_init(&style);
+    lv_style_set_bg_opa(&style, LV_STATE_DEFAULT, LV_OPA_COVER);
+    lv_style_set_bg_color(&style, LV_STATE_DEFAULT, LV_COLOR_MAKE(0xFF, 0xFF, 0xFF));
+    lv_obj_add_style(logo, LV_OBJ_PART_MAIN, &style);
+
+    return screen_logo;
+}
+
 void ui_switch_page_down()
 {
     ui_update_backlight(true);
 
-    current_screen++;
-    current_screen %= NUM_SCREENS;
     ESP_LOGI("DISPLAY", "DISPLAY COUNTER: %d/%d", current_screen+1, NUM_SCREENS);
 
-    lv_scr_load_anim(screens[current_screen], LV_SCR_LOAD_ANIM_OVER_TOP, 300, 0, false);
+    lv_scr_load_anim(ui_palla_otto_random_screen(), LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, true);
 
     restore_current_task();
 }
@@ -637,11 +690,9 @@ void ui_switch_page_up()
 {
     ui_update_backlight(true);
 
-    current_screen--;
-    current_screen = (NUM_SCREENS + (current_screen % NUM_SCREENS)) % NUM_SCREENS;
     ESP_LOGI("DISPLAY", "DISPLAY COUNTER: %d/%d", current_screen+1, NUM_SCREENS);
     
-    lv_scr_load_anim(screens[current_screen], LV_SCR_LOAD_ANIM_OVER_BOTTOM, 300, 0, false);
+    lv_scr_load_anim(ui_palla_otto_random_screen(), LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, true);
 
     restore_current_task();
 }

@@ -11,12 +11,12 @@ void app_main()
     led_init();
     
     // start bluetooth
-    bt_init();
-    xTaskCreatePinnedToCore(bt_task, "bt_task", 4096, NULL, 6, NULL, 0);
+    // bt_init();
+    // xTaskCreatePinnedToCore(bt_task, "bt_task", 4096, NULL, 6, NULL, 0);
 
     // start wifi management
-    wifi_init();
-    xTaskCreatePinnedToCore(wifi_task, "wifi_task", 4096, NULL, 5, NULL, 0);
+    // wifi_init();
+    // xTaskCreatePinnedToCore(wifi_task, "wifi_task", 4096, NULL, 5, NULL, 0);
 
     // start ui to core 1.
     xTaskCreatePinnedToCore(ui_task, "ui_task", 8192, NULL, 0, NULL, 1);
