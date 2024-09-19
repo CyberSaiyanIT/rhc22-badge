@@ -50,6 +50,8 @@ void ui_event_load();
 void ui_toggle_sync();
 void ui_connection_progress(uint8_t cur, uint8_t max);
 
+lv_obj_t* ui_palla_otto_random_screen();
+
 // void ui_button_up();
 // void ui_button_down();
 // void ui_switch_page_up();
